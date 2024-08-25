@@ -7,8 +7,11 @@ import org.libsdl.app.SDLActivity;
  */
 
 public class FFPlay extends SDLActivity {
+
     protected String[] getArguments() {
-        return new String[]{"http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", "-x", String.valueOf(mSurface.getWidth()), "-y", String.valueOf(mSurface.getHeight())};
+        String url = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4";
+        String url1 = "rtmp://vd2.wmspanel.com/video_demo/stream";
+        return new String[]{url, "-x", String.valueOf(mSurface.getWidth()), "-y", String.valueOf(mSurface.getHeight())};
     }
 
     protected String[] getLibraries() {
