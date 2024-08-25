@@ -10,7 +10,7 @@ include_directories(${CMAKE_SOURCE_DIR}/SDL/include)
 # FFmpeg include headers
 include_directories(${CMAKE_SOURCE_DIR}/FFMPEG/include)
 
-add_library(main SHARED
+add_library(ffplay SHARED
         ffplay/ffplay.c
         ffplay/cmdutils.c
         ffplay/opt_common.c
@@ -106,7 +106,7 @@ set_target_properties(
         ${CMAKE_SOURCE_DIR}/FFMPEG/jniLibs/${ANDROID_ABI}/libswscale.so
 )
 
-target_link_libraries(main
+target_link_libraries(ffplay
         SDL2
         avdevice-lib
         avcodec-lib
