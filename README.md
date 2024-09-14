@@ -20,3 +20,7 @@ It is setup by lateat Android Studo environment at 2024/Aug/25th .
 2024-08-25
 
     initialize the project
+	
+2024-09-14
+
+    add permission request code to support local files
